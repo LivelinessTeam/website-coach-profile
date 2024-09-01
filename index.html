@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liveliness</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+
+<body>
+    <section class="main-container">
+        <div class="coach-info">
+            <div class="coach-img-container">
+                <img class="content" id="userProfileImage" src="" alt="">
+            </div>
+            <div class="coach-text-container">
+                <h2 id="userName" class="content"></h2>
+                <p id="userBio" class="content"></p>
+                <span id="toggleButton">See More</span>
+            </div>
+            <div class="coach-desc content">
+                <div class="coach-total-reviews">
+                    <img src="./assets/images/star.svg" alt="">
+                    <h2>4.5</h2>
+                </div>
+                <div class="reviews-count">
+                    <p id="userTotalReviews"></p>
+                </div>
+                <div class="coach-total-reviews">
+                    <img class="coach-dot" src="./assets/images/dot.svg" alt="">
+                    <h2 id="userTotalEvents"></h2>
+                    <p id="userEvents"></p>
+                </div>
+            </div>
+            <div class="coach-socials">
+                <a id="instagramLink" href="#">
+                    <img src="./assets/images/instagram.svg" alt="Instagram">
+                </a>
+                <a id="tiktokLink" href="#">
+                    <img src="./assets/images/tiktok.svg" alt="Tiktok">
+                </a>
+                <a id="youtubeLink" href="#">
+                    <img src="./assets/images//youtube.svg" alt="Youtube">
+                </a>
+                <a id="websiteLink" href="#">
+                    <img src="./assets/images/web.svg" alt="Web">
+                </a>
+            </div>
+            <div class="coach-location content">
+                <img src="./assets/images/pin.svg" alt="">
+                <h2 id="userLocation"></h2>
+            </div>
+            <div class="coach-location content">
+                <div class="country-image">
+                    <img id="countryFlag" src="" alt="">
+                </div>
+                <h2 id="userNationality"><span></span></h2>
+            </div>
+        </div>
+        <div class="events">
+            <div class="events-header">
+                <h2>Calendar</h2>
+                <a href="#">See all</a>
+            </div>
+            <div class="events-content" id="eventsContainer">
+                <div class="event-card content"></div>
+                <div class="event-card content"></div>
+                <div class="event-card content"></div>
+                <div class="event-card content"></div>
+            </div>
+        </div>
+        <div class="reviews">
+            <div class="reviews-header">
+                <div class="reviews-header-content">
+                    <img src="./assets/images/reviews-start.svg" alt="">
+                    <h2 id="rating">4.95</h2>
+                    <img class="reviews-dot" src="./assets/images/dot.svg" alt="">
+                    <h1>Reviews</h2>
+                </div>
+                <a href="#">See all</a>
+            </div>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper" id="reviews-carousel">
+                    <div class="swper-slide content"></div>
+                </div>
+            </div>
+        </div>
+        <div class="club">
+            <div class="events-header">
+                <h2>Join my club</h2>
+                <a href="#">Join</a>
+            </div>
+            <div class="club-content">
+                <div class="swiper mySwiper-club">
+                    <div class="swiper-wrapper" id="clubs-carousel">
+                        <div class="club-card content"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <a href="https://liveliness.onelink.me/cIZi/qxdqgiru">
+                <img src="./assets/images/logo.svg" alt="LINMO">
+            </a>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./assets/js/scripts.js"></script>
+</body>
+
+</html>

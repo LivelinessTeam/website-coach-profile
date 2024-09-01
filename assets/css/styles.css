@@ -1,0 +1,486 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 768px;
+    margin: 0 auto;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+    font-family: "Inter", sans-serif;
+    background-color: #141318;
+    font-optical-sizing: auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+}
+
+.shimmer-effect {
+    background: linear-gradient(90deg, #cecece 25%, #e0e0e0 50%, #cecece 75%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+    border-radius: 8px;
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -200% 0;
+    }
+
+    100% {
+        background-position: 200% 0;
+    }
+}
+
+.coach-img-container img.shimmer-effect {
+    width: 100%;
+    height: 112px;
+}
+
+h2.shimmer-effect,
+p.shimmer-effect,
+span.shimmer-effect {
+    width: 100%;
+    height: 20px;
+    display: inline-block;
+}
+
+.main-container {
+    padding: 55px 16px 10px 16px;
+}
+
+.coach-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.coach-img-container {
+    width: 112px;
+    height: 112px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.upcoming-events {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+    color: #E7E7E7;
+    text-align: center;
+    border: 1px solid #2F2D36;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+.coach-img-container img {
+    width: 100%;
+}
+
+.coach-text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+}
+
+.coach-text-container h2 {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 28px;
+    color: #fff;
+}
+
+.coach-text-container p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+    color: #E7E7E7;
+    text-align: center;
+}
+
+.coach-text-container span {
+    font-size: 14px;
+    font-weight: 400;
+    font-weight: 700;
+    line-height: 19px;
+    color: #E7E7E7;
+}
+
+.coach-desc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.coach-total-reviews {
+    display: flex;
+    gap: 4px;
+}
+
+.coach-dot {
+    padding-right: 4px;
+}
+
+.coach-total-reviews h2 {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+.coach-total-reviews p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #C2C2C2;
+}
+
+.reviews-count p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #C2C2C2;
+}
+
+.coach-socials {
+    display: flex;
+    gap: 14px;
+    margin: 12px 0 12px 0;
+}
+
+.coach-location {
+    border: 1px solid #2F2D36;
+    border-radius: 8px;
+    display: flex;
+    gap: 12px;
+    padding: 12px;
+    width: 100%;
+    align-items: center;
+}
+
+.coach-location h2 {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #fff;
+}
+
+.coach-location span {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.country-image {
+    width: 20px;
+    height: 20px;
+}
+
+.events {
+    margin-top: 8px;
+    padding: 8px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.events-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.events-header h2 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #fff;
+}
+
+.events-header a,
+.reviews-header a {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #C2C2C2;
+}
+
+.events-content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.event-card {
+    display: flex;
+    border-radius: 8px;
+    background-color: #1F1E24;
+    gap: 12px;
+    overflow: hidden;
+    padding-right: 12px;
+    align-items: center;
+    height: auto;
+}
+
+.event-card .event-photo {
+    width: 80px;
+}
+
+.event-card-content {
+    flex: 1;
+    padding: 12px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.event-card-content h2 {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 18px;
+    color: #DAFF00;
+}
+
+.event-card-content h1 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21px;
+    color: #fff;
+}
+
+.event-card.content.shimmer-effect {
+    height: 70px;
+}
+
+.event-card-content p {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 14px;
+    color: #DADADA;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.reviews-header {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 8px;
+}
+
+.reviews-header-content {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+.reviews {
+    padding: 12px 0 8px 0;
+}
+
+.reviews-header-content h2 {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #fff;
+}
+
+#reviews-carousel.swiper-wrapper {
+    height: auto;
+}
+
+.reviews-header-content h1 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #fff;
+}
+
+.reviews-dot {
+    padding: 0 3px 0 2px;
+}
+
+.reviews .mySwiper {
+    padding-top: 8px;
+}
+
+#userBio {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    /* Limit to two lines */
+    -webkit-box-orient: vertical;
+    max-height: 3em;
+    /* height based on 2 lines */
+}
+
+.coach-text-container.expanded #userBio {
+    -webkit-line-clamp: unset;
+    line-clamp: unset;
+    /* Remove the line clamp */
+    max-height: none;
+    /* Allow full height */
+}
+
+#toggleButton {
+    cursor: pointer;
+}
+
+#reviews-carousel .swiper-slide {
+    background-color: #1F1E24;
+    border-radius: 12px;
+    padding: 16px;
+    display: flex;
+    height: 150px;
+    flex-direction: column;
+    width: 80%;
+}
+
+#reviews-carousel .content.shimmer-effect {
+    height: 150px;
+    padding: 12px;
+    width: 100%;
+}
+
+.club-card.content.shimmer-effect {
+    height: 320px;
+    padding: 12px;
+    width: 100%;
+}
+
+.host-reviews-info {
+    display: flex;
+    gap: 8px;
+    padding: 16px 0 0 0;
+}
+
+.host-reviews {
+    gap: 2x;
+    display: flex;
+    flex-direction: column;
+}
+
+.host-reviews h2 {
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 19px;
+    margin-bottom: 2px;
+}
+
+.host-reviews p {
+    font-size: 12px;
+    font-weight: 400;
+    color: #C2C2C2;
+    line-height: 14px;
+}
+
+#reviews-carousel p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #c2c2c2;
+    padding-bottom: 6px;
+    line-height: 18px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    flex-grow: 1;
+}
+
+.host-circle {
+    width: 32px;
+    height: 32px;
+    border-radius: 100px;
+    overflow: hidden;
+}
+
+.club {
+    padding: 8px 0;
+}
+
+.club .events-header {
+    padding: 8px 0;
+}
+
+.club-content {
+    padding-top: 8px;
+}
+
+.club-card img {
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    object-position: center;
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
+}
+
+.club-text h2 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #fff;
+    padding-bottom: 6px;
+}
+
+.club-text p {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 18px;
+    color: #C2C2C2;
+}
+
+.club-card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    max-height: 328px;
+    height: auto;
+}
+
+.club-card span {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 17px;
+    color: #fff;
+    background-color: #1B1A1F;
+    padding: 4px 8px;
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    border-radius: 4px;
+}
+
+.club-text {
+    background-color: #1F1E24;
+    padding: 12px 16px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    flex: 1;
+}
+
+.footer {
+    padding: 12px 0 8px 0;
+    display: flex;
+    justify-content: center;
+}
