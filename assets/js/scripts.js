@@ -136,7 +136,7 @@ function displayEvents(events) {
         return;
     }
 
-    upcomingEvents.sort((a, b) => new Date(b.trainingStartDateTime) - new Date(a.trainingStartDateTime));
+    upcomingEvents.sort((a, b) => new Date(a.trainingStartDateTime) - new Date(b.trainingStartDateTime));
     const firstFourEvents = upcomingEvents.slice(0, 4);
 
     firstFourEvents.forEach(event => {
