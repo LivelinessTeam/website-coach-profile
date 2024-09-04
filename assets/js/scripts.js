@@ -207,9 +207,10 @@ function displayClubs(clubs) {
     clubsContainer.innerHTML = '';
 
     filteredClubs.forEach(club => {
+        console.log(club)
         const clubSlide = document.createElement('a');
         clubSlide.className = 'club-card swiper-slide';
-        clubSlide.href = `#`;
+        clubSlide.href = `https://club.linmo.app/?eventId=J5yfTyXrvZQafFQR1jcCRaHfcvv2&clubId=19b38cdc-3186-47b7-b059-64b0c1261d40`;
 
         clubSlide.innerHTML = `
             <img src="${club.headerPhoto}" alt="">
