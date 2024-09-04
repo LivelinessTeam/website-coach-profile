@@ -82,7 +82,7 @@ function updateNationality(data) {
 }
 
 function displayUserData(userData, totalEvents) {
-
+    console.log('user', userData)
     const socialLinks = {
         "instagram": userData.instagram,
         "tikTok": userData.tikTok,
@@ -140,6 +140,7 @@ function displayEvents(events) {
     const firstFourEvents = upcomingEvents.slice(0, 4);
 
     firstFourEvents.forEach(event => {
+        console.log('event', event)
         const eventCard = document.createElement('div');
         eventCard.className = 'event-card';
         const date = new Date(event.trainingStartDateTime);
@@ -207,7 +208,7 @@ function displayClubs(clubs) {
     clubsContainer.innerHTML = '';
 
     filteredClubs.forEach(club => {
-        console.log(club)
+        console.log('clubs', club)
         const clubSlide = document.createElement('a');
         clubSlide.className = 'club-card swiper-slide';
         clubSlide.href = `https://club.linmo.app/?eventId=J5yfTyXrvZQafFQR1jcCRaHfcvv2&clubId=19b38cdc-3186-47b7-b059-64b0c1261d40`;
