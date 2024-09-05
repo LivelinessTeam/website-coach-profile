@@ -502,7 +502,7 @@ span.shimmer-effect {
     justify-content: center;
 }
 
-.upcoming-events {
+#reviews-carousel .upcoming-events {
     font-size: 14px;
     font-weight: 400;
     line-height: 19px;
