@@ -137,7 +137,6 @@ function displayEvents(events) {
 
     upcomingEvents.sort((a, b) => new Date(a.trainingStartDateTime) - new Date(b.trainingStartDateTime));
     const firstFourEvents = upcomingEvents.slice(0, 4);
-    console.log(firstFourEvents)
 
     firstFourEvents.forEach(event => {
         const eventCard = document.createElement('div');
