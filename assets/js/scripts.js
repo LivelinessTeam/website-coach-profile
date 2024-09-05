@@ -175,29 +175,33 @@ function displayReviews(reviews) {
     const reviewsContainer = document.getElementById('reviews-carousel');
     reviewsContainer.innerHTML = '';
 
-    reviews.forEach(review => {
-        const reviewSlide = document.createElement('div');
-        reviewSlide.className = 'swiper-slide';
+    if (reviews.length === 0) {
+        reviewsContainer.innerHTML = '<p class="upcoming-events">No reviews</p>';
+    } else {
+        reviews.forEach(review => {
+            const reviewSlide = document.createElement('div');
+            reviewSlide.className = 'swiper-slide';
 
-        const formattedDate = formatRelativeDate(review.createdAt);
+            const formattedDate = formatRelativeDate(review.createdAt);
 
-        reviewSlide.innerHTML = `
-            <p>${review.review}</p>
-            <div class="host-reviews-info">
-                <div class="host-circle">
-                    <img src="${review.reviewer.mainProfilePhoto}" alt="Reviewer">
+            reviewSlide.innerHTML = `
+                <p>${review.review}</p>
+                <div class="host-reviews-info">
+                    <div class="host-circle">
+                        <img src="${review.reviewer.mainProfilePhoto}" alt="Reviewer">
+                    </div>
+                    <div class="host-reviews">
+                        <h2>${review.reviewer.name}</h2>
+                        <p>${formattedDate}</p>
+                    </div>
                 </div>
-                <div class="host-reviews">
-                    <h2>${review.reviewer.name}</h2>
-                    <p>${formattedDate}</p>
-                </div>
-            </div>
-        `;
+            `;
 
-        reviewsContainer.appendChild(reviewSlide);
-    });
+            reviewsContainer.appendChild(reviewSlide);
+        });
 
-    initializeSwiper('.mySwiper');
+        initializeSwiper('.mySwiper');
+    }
 }
 
 function displayClubs(clubs) {
